@@ -1,0 +1,52 @@
+﻿@model Address
+
+@{
+    List<Address> addresses = ViewBag.Addresses;
+}
+
+<div class="container mt-5">
+
+    <div class="row">
+        @foreach (var addres in addresses)
+        {
+            <div class="col-md-4 mb-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>@addres.User.UserName</h5>
+                        <p>@addres.AddressesLine, @addres.City @addres.State - @addres.ZipCode</p>
+                        <a asp-controller="CheckOut" asp-action="Confirm" asp-route-addressId="@addres.Id" class="btn btn-primary">Deliver here</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+    <form asp-action="Index">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="AddressesLine" class="control-label"></label>
+            <input asp-for="AddressesLine" class="form-control" />
+            <span asp-validation-for="AddressesLine" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="City" class="control-label"></label>
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="State" class="control-label"></label>
+            <input asp-for="State" class="form-control" />
+            <span asp-validation-for="State" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ZipCode" class="control-label"></label>
+            <input asp-for="ZipCode" class="form-control" />
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Add New Address" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
