@@ -1,2 +1,6 @@
 ![RestaurantMainPage](https://github.com/user-attachments/assets/cf3941ff-de1f-4f7b-89f5-d9a6abbcc304)
 ![ShoppingCart](https://github.com/user-attachments/assets/9c1592ba-e528-4b23-9dcf-39bbc289d9b7)
+![CheckOut](https://github.com/user-attachments/assets/3fefccfa-d238-40cb-8f5d-31708a4f1120)
+![OrdersList](https://github.com/user-attachments/assets/bbc89879-8839-49a9-9285-d84a38ee984f)
+![OrderDetails](https://github.com/user-attachments/assets/cfd59763-8ae0-471f-bc5a-e3f0765930e8)
+![Dashboard](https://github.com/user-attachments/assets/0c295379-60b9-4a10-9a2b-0d7675b8448b)
